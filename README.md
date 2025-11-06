@@ -1,22 +1,15 @@
-# Irish Music Hub – Website Project
+# Music World – Website Project
 
 This project is a 4–page website focused on music news, concerts, and live event highlights in Ireland.  
 It was created as part of a web design module to demonstrate skills in HTML, CSS, responsive design, layout planning, and multimedia integration.
 
 ---
 
-## 🌐 Website Pages
 
-| Page | File | Purpose |
-|------|------|---------|
-| Home | `index.html` | Includes introductory content and a Top 10 chart displayed in table format. |
-| News | `news.html` | Displays latest music news and an image banner. |
-| Concerts Near Me | `concerts.html` | Shows upcoming concerts using a scrollable responsive data table. |
-| Gallery | `gallery.html` | A responsive image gallery showcasing live concert photos. |
 
 ---
 
-## 🎯 Features Implemented (as required by the assignment)
+## Features Implemented (as required by the assignment)
 
 - Appropriate **meta tags** for accessibility and SEO awareness
 - **Consistent header**, logo area, and navigation across all pages
