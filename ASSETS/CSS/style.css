@@ -11,6 +11,7 @@ body {
     gap: 15px;
     flex-wrap: wrap;
     padding: 15px;
+    background: linear-gradient(90deg, #000 0%, #222 100%);
 }
 
 .logo-banner img {
