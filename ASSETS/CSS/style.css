@@ -18,8 +18,6 @@ body {
 .logo-banner img {
     width: 60px;
     height: auto;
-    background: linear-gradient(90deg, #000 0%, #222 100%);
-
 }
 
 .logo-banner h1 {
@@ -191,6 +189,8 @@ footer {
  text-align: center;
  background-color: #444;
  background: linear-gradient(90deg, #000 0%, #222 100%);
-
 }
 
+a {
+    color: #5898dd;
+}
