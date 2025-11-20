@@ -1,72 +1,68 @@
-body {
+* { 
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
     margin: 0;
-    background-color: #000;
-    color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(90deg, #000 0%, #222 100%);
+    color: #fff;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .logo-banner {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 15px;
-    flex-wrap: wrap;
+    background: linear-gradient(90deg, #000 0%, #222 100%);
     padding: 15px;
-    background: linear-gradient(90deg, #000 0%, #222 100%);
 }
 
-.logo-banner img {
+.logo-banner img{
     width: 60px;
-    height: auto;
-}
-
-.logo-banner h1 {
-    margin: 0;
-}
-
-nav {
-    background: linear-gradient(90deg, #000 0%, #222 100%);
 }
 
 nav ul {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 20px;
-    list-style: none;
-    margin: 0 auto;
     padding: 10px 0;
-    width: fit-content;
+    margin: 0;
+    list-style: none;
 }
 
-nav ul li {
-    flex: 0 0 auto;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
+nav ul li a{
     padding: 8px 16px;
     border-radius: 6px;
 }
 
 nav ul li a:hover, nav ul li a:active {
-    background-color: grey;
+    background-color: #222;
 }
 
-main { 
+main {
     width: 90%;
     max-width: 1000px;
     margin: 20px auto;
-    text-align: center;
-    text-wrap: wrap;
+    text-align: center; 
 }
 
 .table-container {
     width: 100%;
     overflow-x: auto;
+    margin-top: 20px;
     -webkit-overflow-scrolling: touch;
-    margin-top: 20px
 }
 
 .concerts-table, .hits-table {
@@ -74,8 +70,8 @@ main {
     min-width: 600px;
     border-collapse: collapse;
     margin-top: 20px;
-    color: #fff;
     background-color: #111;
+    color: #fff;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -86,60 +82,36 @@ main {
     text-align: left;
 }
 
-.concerts-table th, .hits-table th {
+.concerts-table th, .hits-table td {
     background-color: #222;
     letter-spacing: 1px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px;) {
     .concerts-table th, .concerts-table td, .hits-table th, .hits-table td {
-        text-align: right;
-        padding: 8px 10px;
-    }
-    .concerts-table th, .hits-table td, .hits-table th {
-        text-align: left;
-        background: #222;
-    }
-    .concerts-table tr, .hits-table tr {
-        margin-bottom: 10px;
+        padding:  8px 10px;
     }
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit minmax(120px,1fr));
-    gap: 12px;
-    margin: 20px auto;
-    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
     width: 90%;
-    justify-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    gap: 15px;
 }
 
-@media (max-width: 600px) {
-    .gallery {
-        height: 120px;
-        border-width: 4px;
-    }
-}
-.gallery.img {
+.gallery img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
     border-radius: 8px;
-    transition: transform 0.3s ease, opacity 0,3s ease;
-}
-
-.gallery img:hover {
-    transform: scale (1.05);
-    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 video, iframe {
     width: 100%;
-    height: 300px;
     max-width: 600px;
-    display: block;
-    margin: 0 auto;
+    height: 300px;
 }
 
 @media (max-width: 600px) {
@@ -148,49 +120,9 @@ video, iframe {
     }
 }
 
-.news img {
-    width: 100%;
-    height: auto;
-    max-width: 450px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-}
-
-@media (max-width: 500px) {
-    .news img {
-        max-width: 85%;
-    }
-}
-
-.concert-header img, .concert-artist img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 footer {
- text-align: center;
- background-color: #444;
- background: linear-gradient(90deg, #000 0%, #222 100%);
-}
-
-a {
-    color: #5898dd;
+    text-align: center;
+    padding: 15px 0;
+    background: linear-gradient(90deg, #000 0%, #222 100%);
+    margin-top: auto;
 }
