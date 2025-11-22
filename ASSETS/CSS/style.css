@@ -30,6 +30,9 @@ padding: 15px;
 gap: 10px;
 }
 
+.logo-banner img{
+    width: 60px;
+}
 
 nav ul {
     display: flex;
@@ -85,7 +88,7 @@ main {
     letter-spacing: 1px;
 }
 
-@media (max-width: 700px;) {
+@media (max-width: 700px) {
     .concerts-table th, .concerts-table td, .hits-table th, .hits-table td {
         padding:  8px 10px;
     }
