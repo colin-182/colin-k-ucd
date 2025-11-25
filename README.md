@@ -19,5 +19,5 @@ It was created as part of a web design module to demonstrate skills in HTML, CSS
 - Concert information table with horizontal scroll on smaller screens (concerts.html)
 - Clickable email hyperlink (located in footer)
 - External link to Ticketmaster for ticket purchasing
-- Image gallery bonus feature implemented (`gallery.html`)
+- Image gallery bonus feature implemented (gallery.html)
 - Tested and displays correctly on Chrome, Edge, Firefox, and mobile browsers
